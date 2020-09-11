@@ -81,10 +81,10 @@ const filterMenuItems = (e) => {
 
   //toggle visibility of items
   spicyItems.forEach((item) => {
-    if (item.style.display === "none") {
-      item.style.display = "block";
+    if (item.hasAttribute("hidden")) {
+      item.removeAttribute("hidden");
     } else {
-      item.style.display = "none";
+      item.setAttribute("hidden", "null");
     }
   });
 };
