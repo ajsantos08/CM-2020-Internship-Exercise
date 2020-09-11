@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: "Italiana", serif;
   background: #ede1a7;
+  color: #464646;
 }
 
 .spicy:before {
@@ -43,6 +44,10 @@ h2 {
 }
 .item-price {
   float: right;
+}
+
+.item-description {
+  margin-top: 0;
 }
 
 .spicy-form {
