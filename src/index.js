@@ -45,12 +45,13 @@ const createMenuItemElement = ({ name, price, description, spicy }) => {
 
   //add spicy class if menu item is spicy
   if (spicy) {
-    menuItem.classList.add("disclaimer", "spicy", "menu-item");
+    menuItem.classList.add("disclaimer", "spicy");
   }
   //add classes
   itemName.classList.add("item-name");
   itemPrice.classList.add("item-price");
   itemDescription.classList.add("item-description");
+  menuItem.classList.add("menu-item");
 
   //append all DOM nodes
   itemName.appendChild(menuItemName);
@@ -88,5 +89,6 @@ const filterMenuItems = (e) => {
   });
 };
 
+//add eventlistener to checkbox
 const spicyCheckbox = document.getElementById("spicy-checkbox");
 spicyCheckbox.addEventListener("change", filterMenuItems);
