@@ -38,6 +38,13 @@ h2 {
   color: #559970;
 }
 
+.menu-item.hidden {
+  display: none;
+}
+
+.menu-item {
+  display: block;
+}
 .item-name {
   display: inline-block;
   color: #e31f29;

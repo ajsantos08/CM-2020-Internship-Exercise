@@ -80,13 +80,7 @@ const filterMenuItems = (e) => {
   );
 
   //toggle visibility of items
-  spicyItems.forEach((item) => {
-    if (item.hasAttribute("hidden")) {
-      item.removeAttribute("hidden");
-    } else {
-      item.setAttribute("hidden", "null");
-    }
-  });
+  spicyItems.forEach((item) => item.classList.toggle("hidden"));
 };
 
 //add eventlistener to checkbox
